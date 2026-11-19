@@ -41,6 +41,20 @@ namespace Library_Book_Borrowing_System.Domain
             _repo.SaveBook(book);
             _repo.SaveUser(user);
         }
+
+        // public void ReturnBook(Guid userId, string isbn)
+        // {
+        //     var user = _repo.GetUser(userId);
+        //     var book = _repo.GetBook(isbn);
+
+        //     if (!user.BorrowedIsbns.Contains(isbn))
+        //         throw new InvalidOperationException("User did not borrow this book");
+
+        //     book.Return();
+
+        //     _repo.SaveBook(book);
+        //     _repo.SaveUser(user);
+        // }
     }
 
 }

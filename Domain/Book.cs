@@ -39,6 +39,12 @@ namespace Library_Book_Borrowing_System.Domain
 
             AvailableCopies++;
         }
+
+        // public void Return()
+        // {
+        //     if (AvailableCopies == TotalCopies)
+        //         throw new InvalidOperationException("All copies already returned");
+        // }
     }
 
 }
